@@ -1,4 +1,5 @@
 import './menu-styles.scss'
+import randomimg from '../../assets/randomimg.png'
 import { Category } from '../../types/Category';
 
 
@@ -13,11 +14,11 @@ const Menu = ({ categories }: MenuProps) => {
         const { title, id } = category;
         return(
           <div key={id} className='category'>
-          {/* <img /> */}
-          <div className='category-body'>
-            <h2>{title}</h2>
-            <p>Shop Now</p>
-          </div>
+          <img src={randomimg}/>
+            <div className='category-body'>
+              <h2>{title}</h2>
+              <p>Shop Now</p>
+            </div>
           </div>
         ) 
       })}
