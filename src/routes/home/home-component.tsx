@@ -2,10 +2,6 @@ import Menu from '../../components/menu-component/menu'
 import { Category } from '../../types/Category';
 import { Outlet } from 'react-router-dom';
 
-const Navbar = () => {
-
-}
-
 const Home = () => {
 
   const categories: Category[] = [
