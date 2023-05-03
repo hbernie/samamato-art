@@ -3,7 +3,7 @@ import { Outlet, Link } from 'react-router-dom';
 import logo from '../../assets/fake-logo.png';
 import './navbar.scss';
 
-const Navbar = () => {
+const Navbar = (): JSX.Element => {
     return (
         <Fragment>
             <div className="navbar">

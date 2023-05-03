@@ -1,8 +1,7 @@
 import Menu from '../../components/menu-component/menu';
 import { type Category } from '../../types/Category';
-import { Outlet } from 'react-router-dom';
 
-const Home = () => {
+const Home = (): JSX.Element => {
     const categories: Category[] = [
         {
             id: 1,

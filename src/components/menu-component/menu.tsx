@@ -5,7 +5,7 @@ interface MenuProps {
     categories: Category[];
 }
 
-const Menu = ({ categories }: MenuProps) => {
+const Menu = ({ categories }: MenuProps): JSX.Element => {
     return (
         <div className="menu">
             {categories.map((category) => {

@@ -5,9 +5,11 @@ module.exports = {
         node: true,
     },
     extends: [
+        'eslint:recommended',
         'plugin:react/recommended',
         'standard-with-typescript',
         'plugin:prettier/recommended',
+        'plugin:react/jsx-runtime',
     ],
     overrides: [],
     parserOptions: {
@@ -16,5 +18,10 @@ module.exports = {
         sourceType: 'module',
     },
     plugins: ['react'],
+    settings: {
+        react: {
+            version: '18.2.0',
+        },
+    },
     rules: {},
 };
