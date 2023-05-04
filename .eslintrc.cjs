@@ -7,7 +7,8 @@ module.exports = {
     extends: [
         'eslint:recommended',
         'plugin:react/recommended',
-        'standard-with-typescript',
+        // 'standard-with-typescript',
+        'plugin:@typescript-eslint/recommended',
         'plugin:prettier/recommended',
         'plugin:react/jsx-runtime',
     ],
@@ -23,5 +24,12 @@ module.exports = {
             version: '18.2.0',
         },
     },
-    rules: {},
+    rules: {
+        '@typescript-eslint/explicit-module-boundary-types': 'off',
+        'no-alert': 'warn',
+        'no-console': 'warn',
+        'prettier/prettier': 'warn',
+        'no-unused-vars': 'warn',
+        '@typescript-eslint/explicit-module-boundary-types': 'warn',
+    },
 };
